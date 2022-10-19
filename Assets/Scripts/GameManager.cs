@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.Advertisements;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,18 +15,14 @@ public class GameManager : MonoBehaviour
     public bool isDead { set; get; }
     public static bool Once = false;   
 
-    private float score, highScore;
+    private float score;
     public Text scoreText, highText;
 
     private float audioDeath;
-    private float audioDeath2;
 
     private AudioSource aud;
-
     public AudioClip playAudio;
-
     public GameObject rewardDeath;
-
     public GameObject particulasOrbita;
 
     private void Awake()
@@ -105,15 +100,6 @@ public class GameManager : MonoBehaviour
 
     public void onDeath()
     {
-
-        int ran = Random.Range(0, 7);
-        if(ran == 4)
-        {   
-            if (Advertisement.IsReady())
-            {
-                Advertisement.Show("video");
-            }
-        }
         isDead = true;
         deathPanel.SetActive(true);
         gameMenuPanel.SetActive(false);      

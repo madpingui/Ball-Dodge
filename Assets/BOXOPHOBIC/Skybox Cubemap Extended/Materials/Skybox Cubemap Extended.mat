@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Skybox Cubemap Extended
   m_Shader: {fileID: 4800000, guid: 82881a2d011b0964696411c822cdd00b, type: 3}
   m_ShaderKeywords: _ENABLEROTATION_ON
@@ -92,7 +93,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Rotation: -84.93259
+    - _Rotation: -0.8122696
     - _RotationSpeed: 2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -105,3 +106,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Tex_HDR: {r: 1, g: 1, b: 0, a: 0}
     - _TintColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+  m_BuildTextureStacks: []
