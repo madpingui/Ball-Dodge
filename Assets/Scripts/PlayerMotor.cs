@@ -52,7 +52,7 @@ public class PlayerMotor : MonoBehaviour {
         }
 
         Vector3 move = new Vector3(x, Physics.gravity.y, speed);
-        rb.velocity = move;
+        rb.linearVelocity = move;
 
         if (transform.position.y < -30)
         {
